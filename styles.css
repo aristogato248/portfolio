@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: #fff;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+
+header.hero {
+  background: #000;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+header.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header.hero p {
+  font-size: 1.5rem;
+  color: #ccc;
+  font-style: italic;
+}
+
+
+.sobre-mi {
+  background: #fddde6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+}
+
+.foto-perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px; /* Cuadrada */
+  object-fit: cover;
+  margin-right: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.texto-sobre-mi {
+  max-width: 500px;
+  background: #000;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.texto-sobre-mi h2 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  color: #ff7b7b;
+}
+
+
+.destacado {
+  background: #ef4444;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+.skills {
+  background: #fddde6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.skills .card {
+  background: #fff;
+  color: #333;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  max-width: 300px;
+  text-align: center;
+}
+
+
+.galeria {
+  background: #0d0d0d;
+  padding: 3rem 2rem;
+}
+
+.galeria h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ff7b7b;
+  font-size: 2rem;
+}
+
+
+.galeria .grupo-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+.galeria .grupo-imagenes img,
+.galeria > img {
+  width: 100%;
+  max-width: 400px; /* Agrandadas */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+  display: block;
+}
+
+
+.galeria p {
+  text-align: center;
+  margin: 2rem 0;
+  color: #ccc;
+}
+
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 1.2rem;
+}
+
+footer h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff7b7b;
+}
+
+footer span {
+  color: #ff7b7b;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+
+img[src*="trabajo-tortas.jpg"] {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+
+img[src*="tortas-celu.jpg"] {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+img[src*="render-imagen.png"] {
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+
+@media (max-width: 768px) {
+  .sobre-mi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foto-perfil {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria .grupo-imagenes {
+    flex-direction: column;
+  }
+}
